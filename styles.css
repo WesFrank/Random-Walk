@@ -1,0 +1,19 @@
+h1, h2, p {
+  text-align: center;
+}
+
+#frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#origin {
+  stroke: black;
+  stroke-width: 0.5;
+  fill: red;
+};
+
+div {
+  text-align:center;
+}

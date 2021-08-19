@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="styles.css">
+
+<body>
+
+    <!-- Heading/Title -->
+
+    <h1>Random Walk</h1>
+
+    <br>
+    
+    <!-- Project Description -->
+
+    <p>A Random Walk is a series of pseudo-random steps generated programatically, recorded and plotted as a path</p>
+
+    <br>
+    <br>
+
+    <!-- start javascript button -->
+
+    <div style="text-align: center"> <button id="start"> Start </button> &nbsp; &nbsp; &nbsp; <button id="stop"> Stop </button> </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <div>
+
+        <svg id="frame" width="600" height="600" viewBox="-100 -100 200 200 " style="border: black solid">
+
+            <!-- Axes -->
+
+            <path stroke="black" stroke-width="0.3" d="M -95 0 H 95"/>
+
+            <path stroke="black" stroke-width="0.3" d="M 0 -95 V 95"/>
+
+            <!-- Origin -->
+
+            <circle id="origin" cx="0" cy="0" r ="1"/>
+            
+            
+            <!-- Coordinates -->
+
+
+            <g transform="scale(1,-1)">
+            
+                <circle id="dot" cx="0" cy="0" r ="0"/>
+                <path id="path" stroke="blue" fill="none" stroke-width="1" d="M 0 0"/>
+
+            </g>
+            
+
+            <!-- Coordinate outside the transformed group -->
+            
+        </svg>
+
+    </div>
+
+
+    <br>
+    <br>
+
+    <!-- Script Tag -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
